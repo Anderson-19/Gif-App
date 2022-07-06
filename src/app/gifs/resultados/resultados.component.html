@@ -1,0 +1,11 @@
+<div class="container row">
+    <div class="col-md-4 my-4" *ngFor="let r of resultados" style="width: 18rem;">
+         
+             <div class="card text-center animate__animated animate__fadeIn">
+                 <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                     {{r.title}}
+                 </div>
+                 <img [src]="r.images?.downsized_medium?.url" [alt]="r.title" class="card-img-top"> 
+             </div>
+     </div>
+ </div>
